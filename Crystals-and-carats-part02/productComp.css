@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fed7ba;
+  }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fed7ba;
+    color: black;
+    padding: 10px 20px;
+  }
+  
+  .navbar a {
+    color: black;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar-center img {
+    max-height: 50px;
+  }
+  
+  .navbar-right a {
+    margin-left: 15px;
+  }
+  
+  /* Hamburger menu styles */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+  }
+  
+  .menu {
+    display: flex;
+  }
+  
+  .menu a {
+    margin-right: 15px;
+  }
+  .fa-heart,
+.fa-shopping-cart,
+.fa-user {
+  font-size: 20px;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    width: 100%;
+    /* border: 1px solid #ddd; */
+    padding: 20px;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+}
+
+
+.left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left-side img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: black;
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 150px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:maroon;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 10%
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.tag {
+    
+    color: #d9534f; /* Text color */
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* font-weight: bold; */
+    display: inline-block;
+    align-items: center;
+    font-size: 18px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+.tag-1{
+    
+    color: #d9534f; /* Text color */
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* font-weight: bold; */
+    display: inline-block;
+    align-items: center;
+    font-size: 18px;
+    margin-right: 10%;
+    margin-left: 20%;
+}
+
+.center-side {
+    flex: 2;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.special-price {
+    /* margin-top: 10px; */
+    font-weight: bold;
+    color: #d9534f;
+    font-size: 20px;
+}
+
+.price {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+.current-price {
+    font-weight: bold;
+    color: #d9534f;
+}
+
+.original-price {
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: #d9534f;
+}
+
+.discount {
+    margin-left: 10px;
+    color: #d9534f;
+}
+
+.rating {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* background-color: #f0f0f0; */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.star-rating {
+    /* color: gold; */
+    font-weight: bold;
+    background-color: #D27F7F;
+    border-radius: 5px;
+}
+
+.rating-text {
+    color: grey;
+}
+.special-offers-title {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.special-offers-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    margin-top: 10px;
+}
+
+.special-offers-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    /* margin-top: -10px; */
+}
+
+.special-offers-list li i {
+    color: green;
+    margin-right: 10px;
+}
+.delivery-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+.delivery-option input[type="text"] {
+    padding: 5px;
+    border: none; /* Remove the box */
+    border-bottom: 2px solid white; /* Add white underline */
+    background: none; /* Make background transparent */
+    color: black; /* Text color */
+    outline: none; /* Remove outline on focus */
+}
+.delivery-option input[type="text"]::placeholder {
+    color: #d9534f; /* Change the color */
+    font-style: italic; /* Optional: make it italic */
+    opacity: 1; /* Make sure it is fully opaque */
+}
+ .delivery-option[type="text"].check{
+    color:white;
+    background-color: #D27F7F;
+
+}
+.delivery-by{
+    margin-top:0;
+}
+
+.half-line {
+    flex: 1;
+    padding: 5px;
+}
+
+.half-line.left {
+    color:black;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.half-line.right {
+    color: gray;
+    font-size: 12px;
+    
+}
+
+.half-line.right i {
+    margin-left: 10px;
+}
+
+    
+
+
+  

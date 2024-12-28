@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carat</title>
+    <!-- <link rel="stylesheet" href="output.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-primary">
+    <!-- !! ////////////////Header//////////////////// -->
+
+    <header
+      class="header-main flex bg-primary justify-between px-10 h-[100px] items-center mb-0"
+    >
+      <!-- <button class="hamburger sm:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </button> -->
+      <nav class="left-nav-hidden sm:block text-fs_24 font-fw_bold space-x-8">
+        <a href="#" onclick="hideSidebar()"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#000"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            /></svg
+        ></a>
+        <a class="grey" href="#">Home</a>
+        <a class="grey" href="./Components/shop.html">Shop</a>
+        <a class="grey" href="./Components/blog.html">Blog</a>
+      </nav>
+      <a class="hamburger" href="#" onclick="showSidebar()"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#000"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          /></svg
+      ></a>
+      <nav class="left-nav hidden sm:block text-fs_24 font-fw_bold space-x-8">
+        <a class="grey" href="#">Home</a>
+        <a class="grey" href="./Components/shop.html">Shop</a>
+        <a class="grey" href="./Components/blog.html">Blog</a>
+      </nav>
+
+      <div class="logo">
+        <img src="./assets/img/Home/logo.png" class="h-12" alt="" />
+      </div>
+      <nav class="right-nav text-fs_24 font-fw_bold space-x-8 justify-between">
+        <a href="./Components/profile-section-wishlist.html"
+          ><i class="grey fa-solid fa-heart"></i
+        ></a>
+        <a href=""><i class="grey fa-solid fa-cart-shopping"></i></a>
+        <a href="./Components/profile_section_main.html"
+          ><i class="grey fa-solid fa-user"></i
+        ></a>
+      </nav>
+    </header>
+
+    <!-- !!Search Box (Mobile view)-->
+
+    <div class="wrap">
+      <div class="search">
+        <input type="text" class="searchTerm" placeholder="Search For...." />
+        <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+
+
+    <!-- !Best Seller Icons(mobile View) -->
+
+    
+    <div class="best-icon-container">
+      <div class="icon">
+        <div class="icon-img">
+          <img src="./assets/img/ring/r1.jfif" alt="" />
+        </div>
+        <a>Best Seller</a>
+      </div>
+      <div class="icon">
+        <div class="icon-img">
+          <img src="./assets/img/crystals/d1.jfif" alt="" />
+        </div>
+        <a>Crystals</a>
+      </div>
+      <div class="icon">
+        <div class="icon-img">
+          <img src="./assets/img/carat/c1.jfif" alt="" />
+        </div>
+        <a>Carats</a>
+      </div>
+      <div class="icon">
+        <div class="icon-img">
+          <img src="./assets/img/carat/c4.jfif" alt="" />
+        </div>
+        <a>Bridal</a>
+      </div>
+    </div>
+
+    <!-- !!!!!!!!!!!!!!!!!!!!SignUp!!!!!!!!!!!!!! -->
+
+    <div class="signUp nutino">
+      <div class="signup-left"></div>
+      <div class="signup-right">
+        <div class="nav-container">
+          <ul>
+            <li><a class="btn-signup" id="signUp-btn">Sign Up</a></li>
+            <li><a href="" class="btn-signup" id="signIn-btn">Login</a></li>
+          </ul>
+          <i class="fa-solid fa-square-xmark fa-l close-btn"></i>
+        </div>
+        <p id="sign-up-message">
+          Sign up & get Rs. 500 off* coupon code for your first purchase!
+        </p>
+        <form id="form">
+          <input type="text" name="name" id="" placeholder="Name" />
+          <div class="">
+            <input type="email" name="email" id="" placeholder="Email ID" />
+          </div>
+          <input
+            type="number"
+            name="Phone Number"
+            id=""
+            placeholder="Phone Number"
+          />
+          <input type="password" name="Password" id="" placeholder="Password" />
+          <input type="checkbox" name="terms" id="terms" /><span
+            >I agree to the Terms of use and Privacy Statement</span
+          >
+          <button class="btn-signup" role="button">Sign Up</button>
+          <p>
+            Already have an account? <a class="login-now" href="">Login now</a>
+          </p>
+        </form>
+        <form id="signInForm">
+          <input
+            style="margin: 10px 0"
+            type="text"
+            name="name"
+            placeholder="Name"
+          />
+          <input
+            style="margin: 10px 0"
+            type="password"
+            name="Password"
+            placeholder="Password"
+          />
+          <button style="margin: 10px 0" class="btn-signup" role="button">
+            Sign In
+          </button>
+          <a id="forgotPassBtn" style="font-size: 10px" href=""
+            >Forgot Password</a
+          >
+          <button
+            style="margin: 10px 0"
+            class="btn-signup"
+            id="google"
+            role="button"
+          >
+            <i class="fa-brands fa-google"></i> &nbsp;Login with google
+          </button>
+          <p style="font-size: 12px">
+            new user?
+            <a href="" id="signUp-btn" style="color: brown">signup now!!!</a>
+          </p>
+        </form>
+
+        <form id="forget-password-container">
+          <input
+            type="password"
+            name="Password"
+            id=""
+            placeholder="Enter your email Id or Phone Number"
+          />
+          <button
+            id="reset-password-btn"
+            style="margin: 10px 0"
+            class="btn-signup"
+            role="button"
+          >
+            Reset Password
+          </button>
+          <a style="color: white" id="signIn-btn" href=""
+            ><i class="fa-solid fa-arrow-left"></i>back to login</a
+          >
+        </form>
+
+        <form action="" id="reset-password">
+          <h2 style="color: brown">Enter OTP</h2>
+          <div
+            class="otp-container"
+            style="
+              margin-top: 30px;
+              display: flex;
+              flex-direction: row;
+              gap: 20px;
+            "
+          >
+            <div
+              style="
+                height: 30px;
+                border: 1px solid brown;
+                width: 80px;
+                background-color: white;
+              "
+              class="otp"
+            ></div>
+            <div
+              style="
+                height: 30px;
+                border: 1px solid brown;
+                width: 80px;
+                background-color: white;
+              "
+              class="otp"
+            ></div>
+            <div
+              style="
+                height: 30px;
+                border: 1px solid brown;
+                width: 80px;
+                background-color: white;
+              "
+              class="otp"
+            ></div>
+            <div
+              style="
+                height: 30px;
+                border: 1px solid brown;
+                width: 80px;
+                background-color: white;
+              "
+              class="otp"
+            ></div>
+          </div>
+          <button
+            class="btn-signup"
+            style="margin-top: 30px"
+            id="reset-password-confirm"
+          >
+            Contine
+          </button>
+        </form>
+
+        <form id="enter-new-password-container">
+          <input
+            type="password"
+            name="Password"
+            placeholder="Enter your New Password"
+          />
+          <input
+            type="password"
+            name="Password"
+            placeholder="Re-enter your New Password"
+          />
+          <button style="margin: 10px 0" class="btn-signup" role="button">
+            Reset Password
+          </button>
+          <a style="color: white" id="signIn-btn" href=""
+            ><i class="fa-solid fa-arrow-left"></i>Contine</a
+          >
+        </form>
+      </div>
+    </div>
+
+    <!-- !!!!!!!!!!!!!!!!!!!!signIn!!!!!!!!!!!!!! -->
+
+    
+    <!-- 
+      !--------------Carousel ------------------->
+
+    <div class="slide-container-div">
+      <div class="slide-container-left">
+        <div class="container-main-slide">
+          <div class="slide-container">
+            <div class="slides">
+              <img
+                src="./assets/img/Home/h1.jfif"
+                alt=""
+                class="active slide-image"
+              />
+              <img src="./assets/img/Home/h2.jfif" class="slide-image" alt="" />
+              <img src="./assets/img/Home/h3.jfif" class="slide-image" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-container-right">
+        <div class="right-top">
+          <div class="container-main-slide">
+            <div class="slide-container">
+              <div class="slides">
+                <img
+                  src="./assets/img/Home/h1.jfif"
+                  alt=""
+                  class="active slide-image"
+                />
+                <img
+                  src="./assets/img/Home/h2.jfif"
+                  class="slide-image"
+                  alt=""
+                />
+                <img
+                  src="./assets/img/Home/h3.jfif"
+                  class="slide-image"
+                  alt=""
+                />
+              </div>
+
+              <div class="dotsContainer">
+                <div class="dot active" attr="0"></div>
+                <div class="dot" attr="1"></div>
+                <div class="dot" attr="2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-bottom">
+          <div class="container-main-slide">
+            <div class="slide-container">
+              <div class="slides">
+                <img
+                  src="./assets/img/Home/h1.jfif"
+                  alt=""
+                  class="active slide-image"
+                />
+                <img
+                  src="./assets/img/Home/h2.jfif"
+                  class="slide-image"
+                  alt=""
+                />
+                <img
+                  src="./assets/img/Home/h3.jfif"
+                  class="slide-image"
+                  alt=""
+                />
+              </div>
+
+              <div class="dotsContainer">
+                <div class="dot active" attr="0"></div>
+                <div class="dot" attr="1"></div>
+                <div class="dot" attr="2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+      !----------------BROWSE BY CATEGORY------------------ 
+    -->
+
+     <div class="browser-category text-center py-10">
+      <h2 class="text-dark_brown text-fs_48">Browse By Catergory</h2>
+      <p class="gray text-fs_16 drop-shadow-xl">
+        Discover elegance at your fingertips
+      </p>
+      <div
+        class="category-container flex flex-row gap-x-20 py-5 bg-white justify-center items-center"
+      >
+        <div class="category-container-child crystals-container text-center">
+          <h3 class="text-fs_24 text-center">
+            <a href="./Components/admin_panel_crystal.html">Crystals</a>
+          </h3>
+          <div
+            class="crystals flex flex-row justify-center items-center gap-5 pt-5"
+          >
+            <div class="crystal w-[150px] h-[150px] shadow-img-skin">
+              <img
+                class="h-full w-full object-cover object-center"
+                src="./assets/img/Home/crystal-1.jfif"
+                alt=""
+              />
+             <p> <a href="">Diamond</a></p>
+            </div>
+            <div class="crystal w-[150px] h-[150px] shadow-img-brown">
+              <img
+                class="h-full w-full object-cover object-center"
+                src="./assets/img/Home/crystal-2.jfif"
+                alt=""
+              />
+              <p> <a href="">Gemstone</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="category-container-child carats-container">
+          <h3 class="text-fs_24">
+            <a href="./Components/admin_panel_carat.html">Carats</a>
+          </h3>
+          <div class="carats flex flex-row gap-10 pt-5">
+            <div class="carat w-[150px] h-[150px] object shadow-img-skin">
+              <img
+                class="h-full w-full object-cover object-center"
+                src="./assets/img/Home/carat-1.jfif"
+                alt=""
+              />
+              <p><a href="">Gold</a></p>
+            </div>
+            <div class="carat w-[150px] h-[150px] shadow-img-brown">
+              <img
+                class="h-full w-full object-cover object-center"
+                src="./assets/img/Home/carat-2.jfif"
+                alt=""
+              />
+              <p><a href="">Platinum</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- !-----------------BEST SELLER-------------------------- -->
+
+    <div class="best-seller-container text-center py-10">
+      <h2 class="main-h2 text-dark_brown text-fs_48">
+        <a href="./Components/bestseller.html">Best Seller</a>
+      </h2>
+      <p class="main-p text-grey_color text-fs_16 drop-shadow-xl">
+        Timeless elegance meets contemporary style
+      </p>
+      <div class="line-div">
+        <img src="./assets/img/Home/Line-Design 4.png " class="" alt="" />
+      </div>
+      <div class="parent-best-seller grid grid-cols-4 grid-rows-2 gap-4 p-5">
+        <div class="child-best-seller">
+          <img
+            class="shadow-img-brown"
+            src="./assets/img/Home/b1.jfif"
+            alt=""
+          />
+          <p class="button-p"><a href="./Components/bestseller.html">Coins</a></p>
+        </div>
+        <div class="child-best-seller">
+          <img src="./assets/img/Home/b2.jfif" alt="" />
+          <p class="button-p"><a href="./Components/bestseller-page-3.html">Ear Rings</a></p>
+        </div>
+        <div class="child-best-seller">
+          <img src="./assets/img/Home/b3.jfif" alt="" />
+          <p class="button-p"><a href="./Components/bestseller-page-2.html">Bracelets</a></p>
+        </div>
+        <div class="child-best-seller">
+          <img src="./assets/img/Home/b4.png" alt="" />
+          <p class="button-p"><a href="./Components/bestseller-page-2.html">Bangles</a></p>
+        </div>
+        <div class="child-best-seller">
+          <img src="./assets/img/Home/b5.png" alt="" />
+          <p class="button-p"><a href="./Components/bestseller-page-2.html">Necklace</a></p>
+        </div>
+        <div class="child-best-seller">
+          <img src="./assets/img/Home/b-6.png" alt="" />
+          <p class="button-p"><a href="./Components/bestseller-page-4.html">Nose Pins</a></p>
+        </div>
+        <div class="child-best-seller">
+          <img src="./assets/img/Home/b7.png" alt="" />
+          <p class="button-p"><a href="./Components/bestseller-page-3.html">Rings</a></p>
+        </div>
+        <div class="child-best-seller">
+          <img src="./assets/img/Home/b8.jfif" alt="" />
+          <p class="button-p"><a href="./Components/bestseller-page-3.html">Pendant</a></p>
+        </div>
+      </div>
+    </div> 
+
+    <!-- !--------------BRIDAL JEWELLERY------------- -->
+     <div
+      class="bridal-jewellery bg-gradient-to-b from-primary to-grey_color text-center py-10"
+    >
+      <h2 class="main-h2 text-dark_brown text-fs_48">
+        <a href="./Components/bridal-section.html">Bridal Jewellery Special</a>
+      </h2>
+      <p class="main-p text-grey_color text-fs_16 drop-shadow-xl">
+        Be the bride you always dreamt of
+      </p>
+      <div class="line-div relative-gray">
+        <img src="./assets/img/Home/Line-Design 4.png " class="" alt="" />
+      </div>
+      <div
+        class="bridal-jewellery-grid grid grid-cols-3 gap-1 p-5 justify-center"
+      >
+        <div class="grid-div">
+          <img
+            class="bg-brown px-6 py-3"
+            src="./assets/img/Home/j1.png"
+            alt=""
+          />
+          <p class="main-p text-white text-fs_24 shadow-gray-600">
+            <a href="./Components/bridal-explore.html">Enchanting</a>
+          </p>
+        </div>
+        <div class="grid-div">
+          <img
+            class="bg-brown px-6 py-3"
+            src="./assets/img/Home/j2.png"
+            alt=""
+          />
+          <p class="main-p text-white text-fs_24">
+            <a href="./Components/bridal-explore.html">Trendsetter</a>
+          </p>
+        </div>
+        <div class="grid-div">
+          <img
+            class="bg-brown px-6 py-3"
+            src="./assets/img/Home/j3.png"
+            alt=""
+          />
+          <p class="main-p text-white text-fs_24">
+            <a href="./Components/bridal-explore.html">Dazzling</a>
+          </p>
+        </div>
+      </div>
+    </div>  
+
+    <!-- !Gift Card -->
+
+    <div class="gift-card">
+      <div
+        class="main-h2 h2-gift-card font-fw_bold font-ff_poppins text-white text-fs_60"
+      >
+        <a href="./Components/gift.html" class="h2-main" style="color: white; font-weight:800;">GIFT CARDS</a>
+      </div>
+      <img src="./assets/img/Home/gift-card.jfif" alt="" />
+    </div>
+
+    <!-- !---------Shop by Gender-------- -->
+
+    <div class="shop-by-gender text-center px-4 py-10">
+      <h2 class="main-h2 text-dark_brown text-fs_48">Shop By Gender</h2>
+      <p class="main-p text-grey_color text-fs_16 drop-shadow-xl">
+        First-class jewelry for first-class Men, Women & Children.
+      </p>
+      <div class="line-div">
+        <img src="./assets/img/Home/Line-Design 4.png " class="" alt="" />
+      </div>
+      <div class="gender-grid flex gap-4 py-4">
+        <div class="div-gender w-[430px] h-[430px]">
+          <img
+            class="h-full w-full object-cover"
+            src="./assets/img/Home/men.jfif"
+            alt=""
+          />
+          <p class="main-p bg-grey_light text-fs_24 font-fw_dark">
+            <a href="./Components/men.html">Men</a>
+          </p>
+        </div>
+        <div class="div-gender w-[430px] h-[430px]">
+          <img
+            class="h-full w-full object-cover"
+            src="./assets/img/Home/women.png"
+            alt=""
+          />
+          <p class="main-p bg-grey_light text-fs_24 font-fw_dark">
+            <a href="./Components/women.html">Women</a>
+          </p>
+        </div>
+        <div class="div-gender w-[430px] h-[430px]">
+          <img
+            class="h-full w-full object-cover"
+            src="./assets/img/Home/kids.png"
+            alt=""
+          />
+          <p class="main-p bg-grey_light text-fs_24 font-fw_dark">
+            <a href="./Components/kids.html">Kids</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- !---------Video Section------------ -->
+
+    <div class="container">
+      <video
+        src="./assets/img/Home/v1.r.mp4"
+        class="slider"
+        autoplay
+        loop
+        muted
+        controls
+      ></video>
+
+      <ul>
+        <li onclick="videoslider('./assets/img/Home/v1.r.mp4')">
+          <video src="./assets/img/Home/v1.r.mp4"></video>
+        </li>
+        <li onclick="videoslider('./assets/img/Home/v2.mp4')">
+          <video src="./assets/img/Home/v2.mp4"></video>
+        </li>
+      </ul>
+    </div>
+
+    <!-- !-----------Recommendation-------- -->
+
+     <div class="recommendation" style="text-align: center;">
+      <h2 class="main-h2 text-dark_brown text-fs_48 text-center">
+        Recommendation For You
+      </h2>
+      <p class="main-p text-grey_color text-fs_16 text-center drop-shadow-xl">
+        Style meets the pulse of fashion
+      </p>
+      <div class="line-div">
+        <img src="./assets/img/Home/Line-Design 4.png " class="" alt="" />
+      </div>
+      <div
+        class="occassion-container grid grid-cols-2 grid-rows-2 p-16 gap-x-9 gap-y-4 bg-brown justify-center text-center"
+      >
+        <div class="occassion-img img-1 items-center justify-center">
+          <img
+            class="min-h-max min-w-max w-auto h-auto rounded-2xl"
+            src="./assets/img/Home/birthday.jfif"
+            alt=""
+          />
+        </div>
+        <div class="occassion-img  img-2col-start-1 row-start-2 flex items-center justify-center">
+          <img
+            class="min-h-max min-w-max w-auto h-auto rounded-2xl"
+            src="./assets/img/Home/anniversary.jfif"
+            alt=""
+          />
+        </div>
+        <div
+          class="occassion-img  img-3 row-span-2 col-start-2 row-start-1 flex items-center justify-centers"
+        >
+          <img
+            class="min-h-max min-w-max w-auto h-auto rounded-2xl"
+            src="./assets/img/Home/personalised.jfif"
+            alt=""
+          />
+        </div>
+      </div>
+    </div> 
+
+    <!-- !---------------Detail Section------------- -->
+
+    <div class="details">
+      <div class="child address">
+        <div class="child-1">
+          <h3>Address</h3>
+          <p>
+            Crystals & Carats Plot No 44, 45, Street Number 14, Marol MIDC
+            Industry Estate, Andheri East,Mumbai -400093
+            Indore
+          </p>
+        </div>
+        <div class="child-2"></div>
+      </div>
+      <div class="child address">
+        <h3>Help & Info</h3>
+        <ul>
+          <a href="./Components/aboutUs.html"><li>About</li></a>
+          <a href="./Components/career.html"><li>Careers</li></a>
+          <a href="./Components/blog.html"><li>Blog</li></a>
+          <a href="./Components/faq.html"><li>FAQs</li></a>
+        </ul>
+      </div>
+      <div class="child address">
+        <h3>Contact Us</h3>
+        <ul class="contact-us">
+          <li><i class="fa-solid fa-phone"></i>1809-908-5647</li>
+          <li><i class="fa-solid fa-envelope"></i>Get in Touch</li>
+          <li><i class="fa-brands fa-rocketchat"></i>Chat With Us</li>
+        </ul>
+      </div>
+      <div class="child address">
+        <h3>Useful Links</h3>
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Terms of Use</li>
+          <li>Payment Issues</li>
+          <li>Net Banking</li>
+          <li>Custom Jewellery</li>
+        </ul>
+      </div>
+      <div class="child location">
+        <h3>Location</h3>
+        <img src="./assets/img/Home/location.png" alt="" />
+      </div>
+    </div>
+
+    <!-- !----------Social handle---------- -->
+
+    <div class="socials">
+      <span class="brown"> Follow Us on : </span
+      ><i class="fa-brands fa-facebook"></i
+      ><i class="fa-brands fa-instagram"></i
+      ><i class="fa-brands fa-whatsapp"></i><i class="fa-brands fa-twitter"></i>
+    </div>
+    <!-- !!--------------Footer----------- -->
+
+    <footer class="brown">@2024 Crystals & Carats. All Rights Reserved.</footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="./script.js"></script>
+  </body>
+</html>

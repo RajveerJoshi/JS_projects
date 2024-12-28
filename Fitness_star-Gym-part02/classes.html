@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="classes.css">
+
+    <!-- <script src="./index.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="classesmediaqueries.css">
+    <title>Fitness-Star Gym-Classes</title>
+</head>
+
+<body>
+<div>
+    <nav>
+        <ul class="sidebar">
+            <div class="iconssidebar">
+                <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" width="26"
+                            viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                            <path
+                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        </svg></a></li>
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/classes.html">Classes</a></li>
+                <li><a href="/products.html">Products</a></li>
+                <li><a href="/blogs.html">Blogs</a></li>
+                <!-- <li ><a href="#">Join Us</a></li> -->
+                <button class="open-button" onclick="openForm()">Join Us</button>
+                
+              </div>
+        </ul>
+
+        
+        <ul class="">
+            <img src="fitness logo 1.png" width="11%" alt="">
+            <!-- <img src="" alt=""> -->
+            <div class="icons">
+              <li class="hideonmobile"><a href="/home.html">Home</a></li>
+              <li class="hideonmobile"><a href="/classes.html">Classes</a></li>
+              <li class="hideonmobile"><a href="/products.html">Products</a></li>
+              <li class="hideonmobile"><a href="/blogs.html">Blogs</a></li>
+              <!-- <li ><a href="#">Join Us</a></li> -->
+              <li class="hideonmobile"><button class="open-button" onclick="openForm()">Join Us</button></li>
+              <li class="menu-button" onclick="showsidebar()" ><a href="#"><i class="fa-solid fa-bars"></i></a>
+           
+            
+                <!-- <button class="open-button" onclick="openForm()">Join Us</button> -->
+            </div>
+                <div class="form-popup" id="myForm">
+                  <form action="/action_page.php" class="form-container">
+                    <div class="sub">
+                  <h1 style="margin-left: 20%;">SUBSCRIPTION PLAN</h1>
+                </div>
+                 
+                <label for="">Full Name :</label>
+                <br>
+                <input type="text" name="Full Name" id="name" placeholder="Enter your Full Name">
+                <br>
+                  <label for="">Email :</label>
+                  <br>
+                  
+                  <input type="email" name="email" id="name" placeholder="Enter Your Email">
+                  <br><br>
+                  <label for="">Mobile Number:</label>
+                  <br>
+                  <input type="number" name="mobile number" id="name" placeholder="Enter your mobile number">
+                  <br>
+                 
+                  <label for="">Duration :</label>
+                  <br>
+                  &nbsp;&nbsp;&nbsp;
+                  <input type="radio" name="Duration" id="monthly">
+                  &nbsp;
+                  <span id="male">Monthly</span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="radio" name="Duration" id="Yearly">
+                  &nbsp;
+                  <span id="female">Yearly</span>
+                  <br>
+                  
+                  <label for=""> Mode of Payment :</label>
+                  <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="radio" name="MOP" id="Cash" >
+                  &nbsp;
+                  <span id="Cash">Cash</span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="radio" name="MOP" id="Online">
+                  &nbsp;
+                  <span>Online</span>
+                  <br>
+                  <label for=""> Personal Training :</label>
+                  <span style="font-size: 10px;">*free with yearly plan</span>
+                  <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="radio" name="personal" id="Required" >
+                  &nbsp;
+                  <span id="Required">Required</span>
+                  <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="radio" name="personal" id="Not Required">
+                  &nbsp;
+                  <span>Not Required</span>
+                  <br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="checkbox" name="check" id="check">
+                  <span>&nbsp; I accept all terms and conditions
+                     <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; provided in this form.</span>
+                  <br><br>
+              </form>
+             
+                </form>
+                <div class="bttn">
+                  <button type="submit" class="btn">Buy Plan</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+                    
+                  </div>
+             
+            </div>
+            </div>
+</ul>
+    </nav>
+    <!-- section2 -->
+    <div class="section1">
+        <span id="span1">Our Classes</span>
+        <!-- <div class="section1a"> -->
+
+        <div class="section1b">
+            <div class="box">
+                <div>
+                    <img src="gym3 2.png" alt=""> <br>
+                    <h4>6:30 -7:30 AM</h4>
+                </div>
+                <span id="a">Power Excello</span>
+            </div>
+            <div class="box">
+                <div>
+                    <img src="gym2 1.png" alt=""><br>
+                    <h4>6:30 -7:30 AM</h4>
+                </div>
+                <span id="a">Mixed-Level Excello</span><br>
+            </div>
+            <div class="box">
+                <div>
+                    <img src="gym4 1.png" alt=""><br>
+                    <h4>6:30 -7:30 AM</h4>
+                </div>
+                <span id="a">Mixed-Level Excello</span><br>
+
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+    <!-- section2 -->
+    <div class="section2">
+        <span id="spanhead">Our Training Partners</span>
+        <div class="section2a">
+            <div>
+                <img src="Rectangle 25.png" alt="">
+                <h2>John Smith</h2>
+            </div>
+            <div>
+                <img src="Rectangle 26.png">
+                <h2>Anais Louis</h2>
+            </div>
+            <div>
+                <img src="Rectangle 27.png" alt="">
+                <h2> Phil heath</h2>
+            </div>
+        </div>
+    </div>
+    <!-- section3 -->
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+       
+          <img src="Rectangle 33.png" style="width: 100%; height: 90vh;">
+         
+        </div>
+        
+        <div class="mySlides fade">
+         
+          <img src="Rectangle 19.png" style="width:100% ;height: 90vh;">
+          
+          
+        </div>
+      
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        
+        </div>
+       
+   
+        
+       
+    <!-- section6 -->
+    <div class="section6">
+
+        <div>
+            <div class="footer">
+                <div id="footerdiv1">
+                    <img src="fitness logo 1.png" alt=""><br>
+                    <!-- <span>Prioritize Your Fitness Goals  -->
+                    <!-- with our world class services</span> -->
+
+                    <span>Prioritize Your Fitness Goals <br>
+                        with our world class services</span>
+                </div>
+                <div id="footerdiv2">
+
+                    <div>
+                        <h3><a href="#"> COMPANY </a></h3>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers </a></li>
+                        <li><a href="#"> Blogs</a></li>
+                        <li><a href="#"> Terms & Conditions </a></li>
+                    </div>
+                    <div>
+                        <h3><a href="#"> CONTACT </a></h3>
+                        <li><a href="#"> Help/FAQs </a></li>
+                        <li><a href="#"> Press </a></li>
+                        <li><a href="#"> Mobile </a></li>
+                    </div>
+                    <div>
+                        <h3><a href="#" style="padding: 15px;"> MORE </a></h3>
+                        <li><a href="#"> Program </a></li>
+                        <li><a href="#">Plans </a></li>
+                        <li><a href="#">Method </a></li>
+                    </div>
+
+                </div>
+                <div id="footerdiv3">
+                    <h3 style="text-align: center;padding-bottom: 10px; text-decoration: underline;color: #FFA500;">
+                        Popular tag</h3>
+                    <div id="footerdiv3a">
+                        <button id="ab">ABS</button>
+                        <button id="ab" style="width: 100px;">Workout</button><br>
+                        <button id="cd">Nutrition</button>
+                        <button id="ab">Gym</button>
+                    </div>
+                    <div id="footerdiv3b">
+                        <button id="ab">Boxing</button>
+                        <button id="cd">Trainers</button> <br>
+                        <button id="cd">Facilities</button>
+                    </div>
+                </div>
+            </div>
+            <div id="lastsection">
+                <h2>Copyright @ Fitness Star Gym </h2>
+            </div>
+
+        </div>
+    </div>
+    <script src="/Script.js"></script>
+</body>
+
+</html>

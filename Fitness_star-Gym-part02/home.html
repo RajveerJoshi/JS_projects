@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="/responsive.css" />
+   
+    <link rel="stylesheet" href="homemediaqueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Fitness-Strar Gym-Home</title>
+  </head>
+
+  <body>
+    <div>
+      <nav>
+
+<!-- sidebar -->
+        <ul class="sidebar">
+          <div class="iconssidebar">
+              <li onclick = hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" width="26"
+                          viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                          <path
+                              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                      </svg></a></li>
+              <li><a href="/home.html">Home</a></li>
+              <li><a href="/classes.html">Classes</a></li>
+              <li><a href="/products.html">Products</a></li>
+              <li><a href="/blogs.html">Blogs</a></li>
+              <!-- <li ><a href="#">Join Us</a></li> -->
+              <button class="open-button" onclick="openForm()">Join Us</button>
+            
+             
+            </div>
+      </ul>
+
+
+        <ul class="">
+          <img src="fitness logo 1.png" width="11%" alt="">
+          <!-- <img src="" alt=""> -->
+          <div class="icons">
+            <li class="hideonmobile"><a href="#">Home</a></li>
+            <li class="hideonmobile"><a href="/classes.html">Classes</a></li>
+            <li class="hideonmobile"><a href="/products.html">Products</a></li>
+            <li class="hideonmobile"><a href="/blogs.html">Blogs</a></li>
+            <!-- <li ><a href="#">Join Us</a></li> --> 
+            <li class="hideonmobile"><button class="open-button" onclick="openForm()">Join Us</button></li>
+            <li class="menu-button" onclick="showsidebar()" ><a href="#"><i class="fa-solid fa-bars"></i></a>
+         
+          
+              <!-- <button class="open-button" onclick="openForm()">Join Us</button> -->
+          </div>
+              <div class="form-popup" id="myForm">
+                <form action="server side script" class="form-container">
+                  <div class="sub">
+                <h1 style="margin-left: 20%;">SUBSCRIPTION PLAN</h1>
+              </div>
+               
+              <label for="">Full Name :</label>
+              <br>
+              <input type="text" name="Full Name" id="name" placeholder="Enter your Full Name">
+              <br>
+                <label for="">Email :</label>
+                <br>
+                
+                <input type="email" name="email" id="name" placeholder="Enter Your Email">
+                <br><br>
+                <label for="">Mobile Number:</label>
+                <br>
+                <input type="number" name="mobile number" id="name" placeholder="Enter your mobile number">
+                <br>
+               
+                <label for="">Duration :</label>
+                <br>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="Duration" id="monthly">
+                &nbsp;
+                <span id="male">Monthly</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="Duration" id="Yearly">
+                &nbsp;
+                <span id="female">Yearly</span>
+                <br>
+                
+                <label for=""> Mode of Payment :</label>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="MOP" id="Cash" >
+                &nbsp;
+                <span id="Cash">Cash</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="MOP" id="Online">
+                &nbsp;
+                <span>Online</span>
+                <br>
+                <label for=""> Personal Training :</label>
+                <span style="font-size: 10px;">*free with yearly plan</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="personal" id="Required">
+                &nbsp;
+                <span id="Required">Required</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="personal" id="Not Required">
+                &nbsp;
+                <span>Not Required</span>
+                <br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="check" id="check">
+                <span style="font-size:x-small;">&nbsp; I accept all terms and conditions<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; provided in this form.</span>
+                <br><br>
+            </form>
+           
+              </form>
+              <div class="bttn">
+                <button type="submit" class="btn">Buy Plan</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+                  
+                </div>
+           
+          </div>
+          </div>
+
+<!-- heading end -->
+
+        </ul>
+      </nav>
+
+      <div class="section1">
+        <div class="section1a">
+          <!-- <img src="/training-828726_1280 1.png" alt=""> -->
+          <div class="section1b">
+            <h1>Revitalize your body</h1>
+            <span
+              >Fall in love with taking care of yourself: <br />
+              mind, body, and spirit.</span
+            >
+            <br />
+            <div id="btn">
+              <button>Get Started</button>
+              <button style="background-color: #4d4848">
+                Free Trial &nbsp;<i class="fas fa-arrow-right"></i>
+              </button>
+              <!-- <button>Click <i class="fas fa-arrow-right"></i></button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- iconbox -->
+      <div class="iconbox">
+        <li>
+          <a href="#"
+            ><i class="fa-brands fa-whatsapp" style="color: #000000"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-brands fa-facebook" style="color: #000000"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-brands fa-youtube" style="color: #000000"></i
+          ></a>
+        </li>
+      </div>
+      <!-- section2 -->
+      <div class="section2">
+        <h1 style="text-decoration: underline; font-weight: bolder">
+          Fitness Plans & Nutritions
+        </h1>
+        <div class="section2a">
+          <div id="line">
+            <div id="upbox">
+              <img src="Rectangle 13.png" alt="" />
+              <h2>Weight Loss</h2>
+            </div>
+            <div id="downbox">
+              <img src="Rectangle 18.png" alt="" />
+              <h2>Body Building</h2>
+            </div>
+          </div>
+          <div id="line">
+            <div id="upbox">
+              <img src="Rectangle 14.png" alt="" />
+              <h2>Classic Yoga</h2>
+            </div>
+            <div id="downbox">
+              <img src="Rectangle 16.png" alt="" />
+              <h2>Hypertrophy</h2>
+            </div>
+          </div>
+          <div id="line2">
+            <div id="upbox">
+              <img src="Rectangle 15.png" alt="" />
+              <h2>Cycling</h2>
+            </div>
+            <div id="downbox">
+              <img src="Rectangle 17.png" alt="" />
+              <h2>Running</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section3 -->
+      <div class="section3">
+        <h1 id="heading">Subscription Plans</h1>
+        <div class="section3a">
+          <div id="box">
+            <h1>Basic</h1>
+            <span>for 12 months</span>
+            <h1>800/month</h1>
+            <span>for streaming</span> <br />
+            <button>Select Plan</button>
+          </div>
+          <div id="box">
+            <h1>Intermediate</h1>
+            <span>for 12 months</span>
+            <h1>1000/month</h1>
+            <span>for streaming</span> <br />
+            <button>Select Plan</button>
+          </div>
+          <div id="box">
+            <h1>Advanced</h1>
+            <span>for 12 months</span>
+            <h1>1500/month</h1>
+            <span>for streaming</span><br />
+            <button>Select Plan</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- section 4 -->
+      <div class="section4">
+        <!-- <img src="/is 1.png" alt=""> -->
+        <div class="section4a">
+          <div id="sub4a">
+            <img src="gm 1.png" alt="" />
+            <h2>Good Management</h2>
+            <span
+              >What hurts today makes you stronger <br />
+              tomorrow</span
+            >
+          </div>
+          <div id="sub4a">
+            <img src="ps1 1.png" alt="" />
+            <h2>Practice Sessions</h2>
+            <span>Motivation is what gets you started.</span>
+          </div>
+          <div id="sub4a">
+            <img src="ft2 1.png" alt="" />
+            <h2>Personal Trainers</h2>
+            <span
+              >If it doesn't challenge you, it won't <br />
+              change you</span
+            >
+          </div>
+        </div>
+      </div>
+      <!-- section 5 -->
+      <div class="section5">
+        <h1>Success Stories</h1>
+        <div id="section5A">
+          <div id="img5">
+            <img
+              id="img1"
+              src="Rectangle 31 copy.png"
+              alt=""
+              style="padding: 20px"
+            /><br />
+            <span
+              >Working out regularly I lose some of my extra pounds which helped
+              in my modelling career.</span
+            >
+          </div>
+          <div id="img5">
+            <img
+              src="Rectangle 32.png"
+              alt=""
+              style="padding: 20px"
+            /><br />
+            <span>
+              Yoga and Pilates helped me get back in shape and raised my
+              confidence.</span
+            >
+          </div>
+          <div id="img5">
+            <img
+              src="Rectangle 33.png"
+              alt=""
+              style="padding: 20px"
+            /><br />
+            <span
+              >Personal Trainer diet plan helpedin increasing strength and
+              endurance.
+            </span>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <div class="section6">
+        <div>
+          <div class="footer">
+            <div id="footerdiv1">
+              <img src="fitness logo 1.png" alt="" /><br />
+              <!-- <span>Prioritize Your Fitness Goals  -->
+              <!-- with our world class services</span> -->
+
+              <span
+                >Prioritize Your Fitness Goals <br />
+                with our world class services</span
+              >
+            </div>
+            <div id="footerdiv2">
+              <div>
+                <h3><a href="#"> COMPANY </a></h3>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers </a></li>
+                <li><a href="#"> Blogs</a></li>
+                <li><a href="#"> Terms & Conditions </a></li>
+              </div>
+              <div>
+                <h3><a href="#"> CONTACT </a></h3>
+                <li><a href="#"> Help/FAQs </a></li>
+                <li><a href="#"> Press </a></li>
+                <li><a href="#"> Mobile </a></li>
+              </div>
+              <div>
+                <h3><a href="#" style="padding: 15px"> MORE </a></h3>
+                <li><a href="#"> Program </a></li>
+                <li><a href="#">Plans </a></li>
+                <li><a href="#">Method </a></li>
+              </div>
+            </div>
+            <div id="footerdiv3">
+              <h3
+                style="
+                  text-align: center;
+                  padding-bottom: 10px;
+                  text-decoration: underline;
+                  color: #ffa500;
+                "
+              >
+                Popular tag
+              </h3>
+              <div id="footerdiv3a">
+                <button id="ab">ABS</button>
+                <button id="ab" style="width: 100px">Workout</button><br />
+                <button id="cd">Nutrition</button>
+                <button id="ab" >Gym</button>
+              </div>
+              <div id="footerdiv3b">
+                <button id="ab">Boxing</button>
+                <button id="cd">Trainers</button> <br/>
+               <button id="cd">Facilities</button>
+              </div>
+            </div>
+          </div>
+          <div id="lastsection">
+            <h2>Copyright @ Fitness Star Gym </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/Script.js"></script>
+  </body>
+</html>

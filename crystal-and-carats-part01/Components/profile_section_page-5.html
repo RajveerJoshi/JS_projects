@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./shop.css" />
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="./coin.css" />
+    <link rel="stylesheet" href="./profile_section_main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 2rem;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "banner banner"
+          "card-1 card-2"
+          "card-3 card-4";
+      }
+
+      .container > * {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      }
+
+      .banner {
+        grid-area: banner;
+        background: url("../assets/img/profile-card/banner.jfif");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .card-1 {
+        grid-area: card-1;
+        background: url("../assets/img/profile-card/c1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .card-2 {
+        background: url("../assets/img/profile-card/c2.jfif");
+        grid-area: card-2;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .card-3 {
+        background: url("../assets/img/profile-card/c3.jfif");
+        grid-area: card-3;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .card-4 {
+        grid-area: card-4;
+        background: url("../assets/img/profile-card/c4.jfif");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="flex bg-primary justify-between px-10 h-[100px] items-center mb-0"
+    >
+      <nav class="text-fs_24 font-fw_bold space-x-8">
+        <a class="grey" href="../index.html">Home</a>
+        <a class="grey" href="./shop.html">Shop</a>
+        <a class="grey" href="#">Blog</a>
+      </nav>
+      <div class="logo">
+        <img src="../assets/img/Home/logo.png" class="h-12" alt="" />
+      </div>
+      <nav class="text-fs_24 font-fw_bold space-x-8 justify-between">
+        <a href=""><i class="grey fa-solid fa-heart"></i></a>
+        <a href=""><i class="grey fa-solid fa-cart-shopping"></i></a>
+        <a class=""><i class="grey fa-solid fa-user"></i></a>
+      </nav>
+    </header>
+    <section>
+      <div class="sidebar">
+        <div
+          style="background-color: white; border-radius: 10px; padding: 0.5rem"
+          class="category profile-logo-container"
+        >
+          <i class="fa-solid fa-circle-user"></i>
+          <p>
+            <span style="font-size: 14px">Hello,</span><br /><span
+              style="font-weight: 600"
+              >Aditya Bhatt</span
+            >
+          </p>
+        </div>
+        <div class="category">
+          <h4>
+            <i class="fa-solid fa-bag-shopping"></i><span>My Orders</span
+            ><i class="fa-solid fa-angle-right"></i>
+          </h4>
+        </div>
+        <div class="category">
+          <h4><i class="fa-solid fa-user-check"></i>Account Settings</h4>
+          <ul>
+            <li><a href="" class="active">Profile Information</a></li>
+            <li><a href="">Manage Address</a></li>
+          </ul>
+        </div>
+        <div class="category">
+          <h4><i class="fa-solid fa-credit-card"></i>Payments</h4>
+          <ul>
+            <li><a href="" class="">Saved Information</a></li>
+            <li><a href="" class="">Saved UPIs</a></li>
+            <li><a href="" style="color: brown">Gift Card</a></li>
+          </ul>
+        </div>
+        <div class="category">
+          <h4><i class="fa-solid fa-heart"></i>My Stuff</h4>
+          <ul>
+            <li><a href="" class="">My Wishlist</a></li>
+            <li><a href="" class="">My Coupons</a></li>
+            <li><a href="">My Reviews</a></li>
+          </ul>
+        </div>
+        <div class="category">
+          <h4><i class="fa-solid fa-gear"></i>Settings</h4>
+          <ul>
+            <li><a href="" class="">Notifications</a></li>
+            <li><a href="" class="">KYC</a></li>
+          </ul>
+        </div>
+        <div class="category">
+          <h4><i class="fa-solid fa-power-off"></i>Logout</h4>
+        </div>
+      </div>
+      <!-- <form>
+        <h2 style="font-size: x-large; text-align: center;">PERSONAL INFORMATION</h2>
+        <label for="firstName">First Name</label>
+        <input type="text" name="fname" id="fname">
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lname" id="lname">
+        <label for="checkbox-gender">Gender</label>
+        <div class="gender">
+            <input type="checkbox" name="male" id="male">Male
+            <input type="checkbox" name="female" id="female">Female
+        </div>
+            <label for="email" class="email"> Email </label>
+        <input type="email" name="email" id="email">
+        <label for="mobile">Mobile</label>
+        <input type="number" name="number" id="number">
+        <input type="checkbox" name="declare" id="declare">I hearby declare that all Information provided is correct
+        <button>Submit</button>
+        
+      </form> -->
+      <div class="container">
+        <div class="banner"></div>
+        <div class="card-1"></div>
+        <div class="card-2"></div>
+        <div class="card-3"></div>
+        <div class="card-4"></div>
+      </div>
+    </section>
+    <div class="details">
+      <div class="child address">
+        <div class="child-1">
+          <h3>Address</h3>
+          <p>
+            Crystals & Carats Plot No 44, 45, Street Number 14, Marol MIDC
+            Industry Estate, Andheri East,Mumbai -400093
+          </p>
+        </div>
+        <div class="child-2"></div>
+      </div>
+      <div class="child address">
+        <h3>Help & Info</h3>
+        <ul>
+          <li>About</li>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>FAQs</li>
+        </ul>
+      </div>
+      <div class="child address">
+        <h3>Contact Us</h3>
+        <ul class="contact-us">
+          <li><i class="fa-solid fa-phone"></i>1809-908-5647</li>
+          <li><i class="fa-solid fa-envelope"></i>Get in Touch</li>
+          <li><i class="fa-brands fa-rocketchat"></i>Chat With Us</li>
+        </ul>
+      </div>
+      <div class="child address">
+        <h3>Useful Links</h3>
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Terms of Use</li>
+          <li>Payment Issues</li>
+          <li>Net Banking</li>
+          <li>Custom Jewellery</li>
+        </ul>
+      </div>
+      <div class="child">
+        <h3>Location</h3>
+        <img src="../assets/img/Home/location.png" alt="" />
+      </div>
+    </div>
+    <div class="socials">
+      <span class="brown"> Follow Us on : </span
+      ><i class="fa-brands fa-facebook"></i
+      ><i class="fa-brands fa-instagram"></i
+      ><i class="fa-brands fa-whatsapp"></i><i class="fa-brands fa-twitter"></i>
+    </div>
+    <footer class="brown">@2023 Crystals & Carats. All Rights Reserved.</footer>
+
+    <script>
+      const button = document.querySelector(".addtocart");
+      const done = document.querySelector(".done");
+      console.log(button);
+      let added = false;
+      button.addEventListener("click", () => {
+        if (added) {
+          done.style.transform = "translate(-110%) skew(-40deg)";
+          added = false;
+        } else {
+          done.style.transform = "translate(0px)";
+          added = true;
+        }
+      });
+    </script>
+  </body>
+</html>
